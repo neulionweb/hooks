@@ -94,10 +94,10 @@ rm -rf dist
 
 if [ $opt == "premajor" -o $opt == "preminor" -o $opt == "prepatch" -o $opt == "prerelease" ]; then
   git push origin $TAG
-  npm publish --tag=beta
+  npm publish --access public --tag=beta
 else
   git push origin $TAG
-  npm publish # FIXME: the latest published version will always have 'latest' tag, use 'npm dist-tag add [package]@version latest' to change
+  npm publish --access public # FIXME: the latest published version will always have 'latest' tag, use 'npm dist-tag add [package]@version latest' to change
 fi
 
 echo success
