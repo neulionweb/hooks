@@ -9,11 +9,13 @@
     "build": "rimraf dist && tsc && rollup -c",
     "server": "cd ./dev_site && node run.js",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
-    "test": "cross-env BABEL_ENV=test jest --passWithNoTests"
+    "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,json}",
+    "format:check": "prettier --list-different src/**/*.{js,jsx,ts,tsx,css,json}"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.neulion.com.cn:645/framework/helper/lib-template.git"
+    "url": "https://github.com/neulionweb/hooks.git"
   },
   "keywords": [
     "lib",
@@ -60,9 +62,11 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.17.0",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
@@ -75,6 +79,7 @@
     "postcss-flexbugs-fixes": "^4.2.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.3.2",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
     "raw-loader": "^4.0.0",
