@@ -1,0 +1,25 @@
+image: node:alpine
+
+cache:
+  untracked: true
+  key: ${CI_COMMIT_REF_NAME}
+  paths:
+    - node_modules/
+
+before_script:
+  - npm config set registry https://npm.neulion.net.cn:8444/
+  - npm install
+
+stages:
+  - prepack
+
+prepack:
+  stage: prepack
+  script:
+    - npm run prepack
+  only:
+    - master
+    - merge_requests
+  tags:
+    - nl-web
+

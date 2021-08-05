@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    /* Default */
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "allowJs": true,  // Allow .js
+    "jsx": "react",  // Allow .jsx
+    "allowSyntheticDefaultImports": true, // resolve eslint error of `import React from 'react';` See: https://github.com/wmonk/create-react-app-typescript/issues/214
+    "noEmit": true  // Use babel to compile typescript. Use tsc for type check only
+  },
+  "include": [
+    "src"
+  ]
+}
