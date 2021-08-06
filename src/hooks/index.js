@@ -1,6 +1,6 @@
 import useInViewHook from './useInViewHook';
 import useIsUnmounted from './useIsUnmounted';
 import usePrevious from './usePrevious';
-import useWindowResize from './useWindowResize';
+import useWindowSize from './useWindowSize';
 
-export { useInViewHook, useIsUnmounted, usePrevious, useWindowResize };
+export { useInViewHook, useIsUnmounted, usePrevious, useWindowSize };
