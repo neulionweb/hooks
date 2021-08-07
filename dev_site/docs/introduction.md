@@ -17,7 +17,7 @@ const isUnmounted = useIsUnmounted();
 
 useEffect(() => {
   getVideoDetail().then((video) => {
-    if (isUnmounted) return;
+    if (isUnmounted()) return;
 
     handleVideo(video);
   });
