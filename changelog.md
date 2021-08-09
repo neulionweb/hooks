@@ -1,3 +1,17 @@
+# [0.5.0](https://github.com/neulionweb/hooks/compare/v0.4.0...v0.5.0) (2021-08-09)
+
+
+### Bug Fixes
+
+* rollup compile issue ([4c99a6e](https://github.com/neulionweb/hooks/commit/4c99a6e2f643871a116623d7c8755ba76ee262a6))
+
+
+### Features
+
+* add 3 more hooks ([a6e35c2](https://github.com/neulionweb/hooks/commit/a6e35c28e786973cc300f1f926a0399e08c634a7))
+
+
+
 # [0.4.0](https://github.com/neulionweb/hooks/compare/v0.3.0...v0.4.0) (2021-08-07)
 
 
