@@ -1,6 +1,8 @@
-import useInViewHook from './useInViewHook';
+import useActions from './useActions';
+import useDeepEffect from './useDeepEffect';
 import useIsUnmounted from './useIsUnmounted';
 import usePrevious from './usePrevious';
+import useSearch from './useSearch';
 import useWindowSize from './useWindowSize';
 
-export { useInViewHook, useIsUnmounted, usePrevious, useWindowSize };
+export { useActions, useDeepEffect, useIsUnmounted, usePrevious, useSearch, useWindowSize };

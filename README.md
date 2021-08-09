@@ -1,9 +1,7 @@
 # Util Hooks
-
-## useInViewHook
-
-## useIsUnmounted
-
-## usePrevious
-
-## useWindowSize
+* useActions
+* useDeepEffect
+* useIsUnmounted
+* usePrevious
+* useSearch
+* useWindowSize
