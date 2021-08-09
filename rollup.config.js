@@ -117,7 +117,7 @@ const umd = [
       commonjs({
         include: /node_modules/,
         namedExports: {
-          'node_modules/react-is/index.js': ['isValidElementType'],
+          'node_modules/react-is/index.js': ['isValidElementType', 'isContextConsumer'],
         },
       }),
       replace({
@@ -155,7 +155,7 @@ const umd = [
       commonjs({
         include: /node_modules/,
         namedExports: {
-          'node_modules/react-is/index.js': ['isValidElementType'],
+          'node_modules/react-is/index.js': ['isValidElementType', 'isContextConsumer'],
         },
       }),
       replace({
