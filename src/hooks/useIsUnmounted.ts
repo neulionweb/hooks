@@ -6,10 +6,10 @@ const useIsUnmounted = () => {
     () => () => {
       unmountedRef.current = true;
     },
-    []
+    [],
   );
 
-  return () => unmountedRef?.current === true;
+  return () => unmountedRef?.current;
 };
 
 export default useIsUnmounted;
