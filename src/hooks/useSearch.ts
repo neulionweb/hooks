@@ -8,7 +8,7 @@ import { useLocation } from 'react-router-dom';
  *   "" (empty string) if key exist but no value
  *   {value} (empty string) if key exist and has value
  */
-const useSearch = (key) => {
+const useSearch = (key: string): string | null | URLSearchParams => {
   const search = new URLSearchParams(useLocation().search);
 
   if (key) {

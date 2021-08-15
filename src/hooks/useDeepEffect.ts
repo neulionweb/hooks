@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, EffectCallback, DependencyList } from 'react';
 import { isEqual } from 'lodash-es';
 
-const useDeepEffect = (fn, deps) => {
+const useDeepEffect = (fn: EffectCallback, deps: DependencyList): void => {
   const isFirst = useRef(true);
   const prevDeps = useRef(deps);
 
