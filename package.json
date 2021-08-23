@@ -1,6 +1,6 @@
 {
   "name": "@neuweb/hooks",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Common Hooks",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
