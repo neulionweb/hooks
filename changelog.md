@@ -1,3 +1,19 @@
+# [0.6.0](https://github.com/neulionweb/hooks/compare/v0.5.0...v0.6.0) (2021-08-23)
+
+
+### Bug Fixes
+
+* upgrade to webpack@5, to resolve vulnerabilities issue in node-sass ([23ffa78](https://github.com/neulionweb/hooks/commit/23ffa782748b435558b84fa06c89bdefe2655603))
+
+
+### Features
+
+* convert to typescript ([3b506e3](https://github.com/neulionweb/hooks/commit/3b506e3cb5f640abe8c67a166f3c5debb22f0094))
+* convert to typescript ([08a7f77](https://github.com/neulionweb/hooks/commit/08a7f77a6d6c99766856d5e5441f748a76be8c01))
+* finish eslint support on TS ([dde0880](https://github.com/neulionweb/hooks/commit/dde0880ca98092e9a913b92ed4f9299c4eff4562))
+
+
+
 # [0.5.0](https://github.com/neulionweb/hooks/compare/v0.4.0...v0.5.0) (2021-08-09)
 
 
