@@ -8,8 +8,8 @@
     "prepack": "npm run lint && npm run test -- -u && npm run build",
     "build": "rimraf dist && tsc && rollup -c",
     "server": "cd ./dev_site && node run.js",
-    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx,.css,.scss,.json",
-    "lint:fix": "eslint src/ --fix --ext .js,.jsx,.ts,.tsx,.css,.scss,.json",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint src/** --fix",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests"
   },
   "repository": {
@@ -49,6 +49,8 @@
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
     "autoprefixer": "^9.7.4",
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",

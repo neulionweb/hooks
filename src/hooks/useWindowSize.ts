@@ -6,14 +6,14 @@ interface WindowSize {
 }
 
 function useWindowSize(): WindowSize {
-  const [isClient] = useState<Boolean>(typeof window === 'object');
+  const [isClient] = useState<boolean>(typeof window === 'object');
 
   const getSizeCallback = useCallback(
     () => ({
       width: isClient ? window.innerWidth : undefined,
       height: isClient ? window.innerHeight : undefined,
     }),
-    [isClient],
+    [isClient]
   );
 
   const [windowSize, setWindowSize] = useState<WindowSize>(getSizeCallback());
